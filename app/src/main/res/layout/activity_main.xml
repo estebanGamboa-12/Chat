@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".presentatition.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
 
         <ImageView
             android:layout_marginTop="10dp"
-            android:id="@+id/avatar1"
+            android:id="@+id/avatar"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_marginStart="10dp"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:text="Fin de semana"
-            android:layout_toRightOf="@id/avatar1"
+            android:layout_toRightOf="@id/avatar"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:textSize="20dp"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Sofia: sticker"
             android:textColor="@color/gray"
-            android:layout_toRightOf="@id/avatar1"
+            android:layout_toRightOf="@id/avatar"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:textSize="15dp"
@@ -70,5 +70,135 @@
             />
 
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenedor1"
+        android:layout_below="@id/contenedor"
+        >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/avatar1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle_background"
+            />
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/titulo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fin de semana"
+            android:layout_toRightOf="@id/avatar1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sofia: sticker"
+            android:textColor="@color/gray"
+            android:layout_toRightOf="@id/avatar1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/titulo1"
+            />
+        <TextView
+            android:id="@+id/hora1"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:50"
+            android:layout_toEndOf="@id/texto1"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+
+            />
+        <TextView
+            android:id="@+id/mensajes1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="2"
+            android:background="@drawable/circle_background"
+            android:layout_toEndOf="@id/texto1"
+            android:layout_marginStart="-40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/titulo1"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenedor2"
+        android:layout_below="@id/contenedor1"
+        >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/avatar2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle_background"
+            />
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/titulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Fin de semana"
+            android:layout_toRightOf="@id/avatar2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sofia: sticker"
+            android:textColor="@color/gray"
+            android:layout_toRightOf="@id/avatar2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/titulo2"
+            />
+        <TextView
+            android:id="@+id/hora2"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:50"
+            android:layout_toEndOf="@id/texto2"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+
+            />
+        <TextView
+            android:id="@+id/mensajes2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="2"
+            android:background="@drawable/circle_background"
+            android:layout_toEndOf="@id/texto2"
+            android:layout_marginStart="-40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/titulo2"
+            />
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
