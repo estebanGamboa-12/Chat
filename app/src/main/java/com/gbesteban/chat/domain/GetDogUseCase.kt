@@ -6,7 +6,7 @@ import com.iesam.kotlintrainning.Either
 
 class GetDogUseCase(private val repository: DogRepository) {
 
-    operator  fun invoke():Either<ErrorApp,Dog>{
+    operator  suspend fun invoke():Either<ErrorApp,List<Dog>>{
         return  repository.obtain()
     }
 }

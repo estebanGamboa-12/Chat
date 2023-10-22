@@ -1,4 +1,9 @@
 package com.example.chat.domain
 
-data class Dog(val id:Int, val name:String, val description:String, val sex:String, val date:String) {
-}
+data class Dog(
+    val title: String,
+    val subtitle: String,
+    val time: String,
+    val unread_messages: String,
+    val url_image: String
+)
